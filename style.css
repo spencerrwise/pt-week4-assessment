@@ -22,8 +22,9 @@ ul, li {
 
 .remove-button {
 	font-size: 15px;
-	padding: 2px;
-	border-radius: 2px;
+	padding: 2px 6px;
+
+	border-radius: 10px;
 	border-color: red;
 	background-color: red;
 	color: #fff;
