@@ -15,13 +15,13 @@ app.service('todoService', function(){
 	};
 
 	this.removeItem = function(item){
+		
 
 		for(var i = 0; i < items.length; i++){
-			if(items[i].text === item){
+			if(items[i].text === item.text){
 				items.splice(i, 1);
 				return;
 			};
-
 	};
 
 };

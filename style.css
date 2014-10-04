@@ -4,7 +4,32 @@ body {
 	width: 100%;
 }
 
+ul, li {
+
+	list-style: none;
+	padding: 5px;
+}
+
 .main-container {
 	text-align: center;
 
+}
+
+.text-box {
+	padding: 5px;
+
+}
+
+.remove-button {
+	font-size: 15px;
+	padding: 2px;
+	border-radius: 2px;
+	border-color: red;
+	background-color: red;
+	color: #fff;
+	/*height: 15px;
+	width: 15px;*/
+	text-decoration: none;
+	display: inline-block;
+	
 }

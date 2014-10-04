@@ -2,8 +2,6 @@ var app = angular.module('todo');
 
 app.controller('mainCtrl', function($scope, todoService){
 
-
-
 	$scope.getData = function(){
 		$scope.items = todoService.getData();
 	};
@@ -16,8 +14,8 @@ app.controller('mainCtrl', function($scope, todoService){
 
 	};
 
-	$scope.removeItem = function(itemToRemove){
-		todoService.removeItem(itemToRemove);
+	$scope.removeItem = function(item){
+		todoService.removeItem(item);
 	};
 
 	$scope.getData();

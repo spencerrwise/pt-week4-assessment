@@ -8,22 +8,22 @@
   <body ng-controller="mainCtrl">
 
     <div class="main-container">
-      <h1> To Do </h1>
+      <h1> ISHtoDO </h1>
       <form ng-submit="postItem()">
         <input class="text-box" type="text" ng-model="newText" placeholder="What do you need to do?">
 
       </form>
-      <div class="items-container">
+        <div class="items-container">
 
-      	<div ng-repeat="item in items">
-      	</br>
-	          	{{item.text}}
-
-	          	<button ng-click="removeItem(itemToRemove)">x</button>
-
-	    </div>   
-       
-      </div>
+        	<div >
+            <ul>
+              <li ng-repeat="item in items">
+               {{item.text}}
+                 <button class="remove-button" ng-click="removeItem(item)">x</button>
+              </li>
+            </ul>
+  	       </div>   
+        </div>
     </div>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
